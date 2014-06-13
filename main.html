@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GTD Application</title>
+	<!-- uderscore -->
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+
+	<!-- bootstrap & jquery -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <!-- x-editable (bootstrap version) -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="store.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div class="title"><h1>GTD Application</h1></div>
+	<div id="container">
+		<div id="header">
+			<div><h3>ToDo</h3></div>
+			<div><h3>In Progress</h3></div>
+			<div><h3>Done</h3></div>
+		</div>
+		<div id="content">
+			<div id="todo" class="column">
+				<div>
+					<button id="addTask" type="button" class="btn btn-info">Add Task</button>
+					<button id="addBug" type="button" class="btn btn-danger">Add Bug</button>
+				</div>
+			</div>
+			<div id="inProgress" class="column"></div>
+			<div id="done" class="column"></div>
+		</div>
+	</div>
+</body>
+</html>
